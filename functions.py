@@ -11,6 +11,9 @@ a = 6 / pi
 # количество сигм
 m = 2
 
+with open('config.txt', 'r') as file:
+    m = int(file.read().strip())
+
 # папка для сохранения графиков
 output_folder = f'pictures_{m}m/Andrews'
 output_folder_sep = f'pictures_{m}m/separation'

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+m=${1:-2}
+
+echo "$m" > config.txt
+echo "$m сигма будет использовано"
+
 source .venv/bin/activate  
 
 run_notebook() {
