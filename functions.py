@@ -12,7 +12,8 @@ a = 6 / pi
 m = 2
 
 with open('config.txt', 'r') as file:
-    m = int(file.read().strip())
+    m = float(file.read().strip())
+
 
 # папка для сохранения графиков
 output_folder = f'pictures_{m}m/Andrews'
